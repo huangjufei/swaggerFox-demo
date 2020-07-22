@@ -35,6 +35,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <!--swagger 只需要引入下面2个依赖-->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
