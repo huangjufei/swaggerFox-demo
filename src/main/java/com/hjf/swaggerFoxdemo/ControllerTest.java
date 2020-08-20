@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@Api(value = "测试TTestController", tags = {"测试访问接口"})
+@Api(value = "测试ControllerTest", tags = {"测试访问接口"})
 @RequestMapping("/test")
-public class TTestController {
+public class ControllerTest {
 
     @ApiOperation(value = "添加测试数据")
     @PostMapping("/insert")
@@ -21,6 +21,7 @@ public class TTestController {
     })
     public String insertInfo(@ApiParam("用户名字") @RequestParam("userName") String userName,
                              @ApiParam(value = "年龄", allowEmptyValue = true) @RequestParam("age") Integer age) {
+
         String username = userName;
         Integer Age = age;
         return username + age.toString();
